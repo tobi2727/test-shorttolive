@@ -1,0 +1,117 @@
+version: '2.0'
+actions: []
+entities: []
+intents:
+  - fallback:
+      use_entities: []
+
+# slots spielen dann in den stories eine Rolle, hier kann man dann branchen basiernd darauf, welcher slot ausgewählt ist
+slots:
+  berufe:
+    type: categorical
+    values:
+      - lebensmitteltechnik
+      - industriemechaniker
+      - maschinenfuehrer
+      - elektroniker
+      - lagerlogistik
+      - industriekauf
+    influence_conversation: true
+
+  kategorien:
+    type: categorical
+    values:
+      - berufe
+      - about-adelholzener
+      - bewerbung
+      - praktikum
+      - quiz
+    influence_conversation: false
+
+responses:
+  utter_greet:
+    - text: Hallo! 👋🏻 Schön, dass Du vorbeischaust. Ich bin der Azubi-Chatbot von Adelholzener 🤖🗻💧
+            Bei mir kannst Du dich rund um das Thema Ausbildung bei Adelholzener informieren. Über welche
+            Themen willst Du mehr erfahren?
+      buttons:
+      - title: Ausbildungsberufe
+        payload: '/berufe{{"kategorien":"ausbildungesberufe"}}'
+      - title: Adelholzener
+        payload: '/about-adelholzener{{"kategorien":"adelholzener"}}'
+      - title: Bewerbung
+        payload: '/bewerbung{{"kategorien":"bewerbung"}}'
+      - title: Praktikum
+        payload: '/praktikum{{"kategorien":"praktikum"}}'
+      - title: Gipfelstürmer-Quiz
+        payload: '/quiz{{"kategorien":"quiz"}}'
+
+  utter_berufe:
+    - text: Du willst mehr zu den Ausbildungsberufen bei Adelholzener erfahren?
+            Folgende Ausbildungsberufe bieten wir an. Zu welchem Beruf willst Du mehr erfahren?
+      buttons:
+      - title: 👩🏻‍🔬 Fachkraft für Lebensmitteltechnik
+        payload: '/lebensmitteltechnik{{"berufe":"lebensmitteltechnik"}}'
+      - title: 👩🏼‍🔧 Industriemechaniker
+        payload: '/industriemechaniker{{"berufe":"industriemechaniker"}}'
+      - title: 👨🏻‍🔧 Maschinen- und Anlagenführer
+        payload: '/maschinenfuehrer{{"berufe":"maschinenfuehrer"}}'
+      - title: 🔌 Elektroniker für Betriebstechnik
+        payload: '/elektroniker{{"berufe":"elektroniker"}}'
+      - title: 📦 Fachkraft für Lagerlogistik
+        payload: '/lagerlogistik{{"berufe":"lagerlogistik"}}'
+      - title: 👨🏻‍💻 Industriekaufleute
+        payload: '/industriekauf{{"berufe":"industriekauf"}}'
+
+  utter_about-adelholzener:
+    - text: Bei Adelholzener arbeiten lohnt sich! Hier findest Du einige Vorteile, die Du als Azubi bei uns hast:
+
+  utter_bewerbung:
+    - text: Du willst dich bei uns bewerben? Super! 😎 Wir freuen uns schon auf deine Bewerbung! Suche dir für deine Bewerbung die passende Ausbildung heraus
+            und bewirb dich mit Anschreiben, Lebenslauf und deinen Zeugnissen.
+    - text: Du hast Lust bekommen, bei uns eine Ausbildung zu machen? Super! 😎 Wir freuen uns schon auf deine Bewerbung! Suche dir für deine Bewerbung die passende Ausbildung heraus
+            und bewirb dich mit Anschreiben, Lebenslauf und deinen Zeugnissen.
+    - text: Super, dass Du dich für eine Bewerbung bei uns interessierst! Wir freuen uns schon auf deine Bewerbung! Suche dir für deine Bewerbung die passende Ausbildung heraus
+            und bewirb dich mit Anschreiben, Lebenslauf und deinen Zeugnissen.
+
+  utter_praktikum:
+    - text: Du bist nicht sicher, ob der Ausbildungsberuf wirklich zu Dir passt und möchtest bei Adelholzener reinschnuppern? Kein Problem! 🙌🏻
+            Werde eine Woche Teil des Adelholzener Teams und lerne Deinen Traumberuf besser kennen.
+            Bitte sende uns Deine Bewerbungsunterlagen (Anschreiben, Lebenslauf und letztes Schulzeugnis) mit Deinem Wunschzeitraum (1 Woche) und Deinem
+            gewünschten Ausbildungsbereich für das Praktikum. Wir prüfen Deine Bewerbung und melden uns dann bei Dir.
+
+  utter_quiz:
+    - text:
+
+  utter_lebensmitteltechnik:
+    - text: Du interessierst dich für eine Ausbildung zur Fachkraft für Lebensmitteltechnik?
+            Schau dir mal dieses Video an. Darin bekommst Du mehr Einblicke in den Berufsalltag.
+      attachment:
+        type: video
+        payload:
+          title: Fachkraft für Lebensmitteltechnik
+          src: https://www.youtube.com/watch?v=Jvlgr7bxHyE
+
+  utter_industriemechaniker:
+    - text:
+
+  utter_maschinenfuehrer:
+    - text:
+
+  utter_elektroniker:
+    - text:
+
+  utter_lagerlogistik:
+    - text:
+
+  utter_industriekauf:
+
+  utter_fallback:
+    - text: Das habe ich jetzt nicht verstanden 😰 Bitte versuch's mit einer anderen Frage noch einmal.
+    - text: Ich konnte leider nicht genau verstehen, was Du mich gefragt hast 😰 Bitte versuch's noch einmal.
+    - text: Das konnte ich leider nicht verstehen, bitte versuch es noch einmal.
+    - text: Bitte versuche es mit einer anderen Frage, das habe ich jetzt nicht genau verstanden 🤔
+    - text: Wie war das genau? 😰 Ich konnte deine Frage nich verstehen, bitte versuch es noch einmal.
+
+session_config:
+  session_expiration_time: 30  # value in minutes
+  carry_over_slots_to_new_session: false
