@@ -5,27 +5,48 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- greet:
+    use_entities: true
 - goodbye:
     use_entities: true
 - affirm:
-    use_entities: true
-- greet:
-    use_entities: true
-- mood_unhappy:
     use_entities: true
 - deny:
     use_entities: true
 - mood_great:
     use_entities: true
+- mood_unhappy:
+    use_entities: true
 - bot_challenge:
-    use_entities: true
-- who-are-you:
-    use_entities: true
-- thanks:
     use_entities: true
 entities: []
 slots: {}
-responses: {}
+responses:
+  utter_welcome:
+  - text: Hallo und willkommen beim Azubi-Bot von Adelholzener! Bevor wir loslegen können, musst du noch kurz unsere Datenschutzvereinbarung akzeptieren. Klicke dazu einfach den entsprechenden Button.
+      buttons:
+      - title: Akzeptieren
+        payload: "/akzeptieren"
+      - title: Ablehnen
+        payload: "/ablehnen"
+  utter_greet:
+  - text: "Hi"
+    buttons:
+    - title: "Gut"
+      payload: "/mood_great"
+    - title: "Schlecht :("
+      payload: "/mood_unhappy"
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: Hier ist etwas um dich aufzuheitern
+  utter_did_that_help:
+  - text: Hat dir das geholfen?
+  utter_happy:
+  - text: Super, dann weiter so!
+  utter_goodbye:
+  - text: Adios
+  utter_iamabot:
+  - text: Ich bin ein Bot, powered by ViaChat.
 actions: []
 forms: {}
 e2e_actions: []
