@@ -1,0 +1,445 @@
+version: '2.0'
+nlu:
+  - intent: goodbye
+    examples: |
+      -	Schönen Abend noch
+      -	Auf Wiederschauen
+      -	Auf Wiederschauen bot
+      -	auf wiedersehen
+      -	Auf Wiedersehen bot
+      -	Auf Wiedersehen, chat bot.
+      -	bis bald
+      -	bis dann
+      -	bis demnächst
+      -	bis denn
+      -	bis die Tage
+      -	Bis morgen
+      -	bis nachher
+      -	Bis später
+      -	bis zum nächsten Mal
+      -	bis bald bot
+      -	bis dann bot
+      -	bis demnächst bot
+      -	bis denn bot
+      - bis denne
+      - adios
+      -	bis die Tage bot
+      -	Bis morgen bot
+      -	bis nachher bot
+      -	Bis später bot
+      -	bis zum nächsten Mal bot
+      -	Bis zum nächsten Mal. Tschau.
+      -	bye
+      -	bot
+      - ciao
+      -	Ciao.
+      -	Ich gehe jetzt
+      -	Ich verabschiede mich jetzt
+      -	Mach es gut
+      -	Machs gut!
+      -	Man sieht sich!
+      -	Pass gut auf dich auf!
+      -	Schönen Tag
+      -	schönen tag noch
+      -	Schönes Wochenende
+      -	Schön Feierabend
+      -	Tschau
+      - tschuss
+      -	tschüs
+      -	tschüs bot
+      -	Tschüss.
+      -	Tschüss chat bot.
+      -	Wir sehen uns!
+      - bis später
+      - bis später dann
+      - bis dann
+      -	Wir sehen uns das nächste mal
+  - intent: greet
+    examples: |
+      -	Grüß Gott!
+      -	Guten Tag!
+      -	Guten Tag bot
+      -	Guten Tag lieber bot
+      -	Hallo.
+      - Hallo
+      -	Sag mal hallo
+      -	Hallo du da
+      -	Hallo du bot
+      -	Hallo lieber bot.
+      -	Hallo bot.
+      -	Hey!
+      -	Hey robo
+      -	Hey bot
+      -	Hey bot kannst du hallo sagen
+      -	Hi
+      -	Hi bot kannst du hallo sagen
+      -	Hi hallo
+      -	Mahlzeit!
+      -	Moin!
+      -	Moin, bot kannst du hallo sagen
+      -	Moin moin!
+      -	Na du?!
+      -	Na du, bot
+      -	Na du sag mal hallo
+      -	Na du bot, sag mal hallo
+      -	Sag mal hallo.
+      -	Kannst du hallo sagen
+      -	Kannst mich begrüßen
+      -	Kannst du uns begrüßen
+      -	sei gegrüßt
+      -	sei gegrüßt bot
+      -	Servus
+      -	Servus bot
+      -	hi bot
+      -	hi bot
+      - Servus
+      -	huhu bot
+      -	huhu du da
+      -	huhu hallo
+      -	huhu
+      -	huhu sag mal hallo
+  - intent: thanks
+    examples: |
+      -	Danke
+      -	vielen dank
+      -	vielen lieben dank
+      -	danke bot
+      -	lieben dank
+      -	toll danke
+      -	ok danke
+      -	perfekt danke
+      -	danke für alles
+      -	danke für die hilfe
+      -	cool, danke
+      -	ja danke
+      -	ok vielen dank
+      -	großartig vielen dank
+  - intent: affirm
+    examples: |
+      -	Alles klar.
+      -	Alles klar bot
+      -	auf jeden fall
+      -	Dann erzähl mal.
+      -	Dann erzähl mal bot
+      -	gern
+      -	gern bot
+      -	Gerne.
+      -	Gerne. Ja.
+      -	Ich will mehr darüber wissen.
+      -	ja
+      -	ja bot
+      -	Ja.
+      -	Ja bitte.
+      -	Ja doch, erzähl mal.
+      -	Ja erzähl mal.
+      -	Ja erzähl mal noch ein bisschen.
+      -	Ja erzähl mal noch ein bisschen mehr.
+      -	Ja, erzähl mal was.
+      -	Ja gerne.
+      -	Ja ja doch.
+      -	Ja ja, hab ich.
+      -	Ja klar.
+      -	Jo.
+      -	johr
+      -	Na gut.
+      -	Na immer mehr.
+      -	na klar
+      -	Na klar.
+      -	Natürlich.
+      -	Noch mehr.
+      -	Erzähle mir mehr
+      -	Erzähle noch mehr
+      -	nu klar
+      -	ok
+      -	okay
+      -	Okay.
+      -	Okay, dann kommen wir mal wieder.
+      -	Sehr gern.
+      -	Sehr gern bot
+      -	Na klar bot
+      -	Natürlich bot
+      -	nu klar bot
+      -	ok bot
+      -	okay bot
+  - intent: who-are-you
+    examples: |
+      -	Wer bist Du?
+      - Wie heißt Du?
+      - Wie ist dein Name?
+      - Was bist du?
+      - Bist Du ein Mensch?
+      - Mit wem schreibe ich?
+      - Bist Du eine Person?
+      - Bist Du ein Mann oder eine Frau?
+
+
+  - intent: faq/wie-bewerben
+    examples: |
+      - Wie kann ich mich bewerben?
+      - Wie bewerben?
+      - Wie muss ich mich bewerben?
+      - Wie funktioniert die Bewerbung?
+      - Was muss ich bei der Bewerbung machen?
+      - Wie muss ich mich bewerben?
+      - Wo kann ich mich bewerben?
+      - Wo muss ich meine Bewerbung hinschicken?
+      - Was muss ich alles bei der Bewerbung mitschicken?
+      - Welche Unterlagen brauche ich für die Bewerbung?
+      - Mit welchen Unterlagen muss ich mich bewerben?
+      - Brauche ich ein Anschreiben?
+      - Muss ich eine Bewerbungsmappe verschicken?
+      - Muss ich ein Bewerbungsanschreiben mitschicken?
+      - Brauche ich einen Lebenslauf?
+      - Muss ich einen Lebenslauf mitschicken?
+  - intent: faq/online-bewerben
+    examples: |
+      - Muss ich mich online bewerben?
+      - Kann ich mich online bewerben?
+      - Wie kann ich mich online bewerben?
+      - Wo kann ich mich online bewerben?
+      - Ist die Bewerbung online?
+      - Bewerbung für Ausbildungsplatz online?
+      - Muss ich mich per Post oder online bewerben?
+      - Muss ich mich online bewerben?
+      - Kann ich mich auch per Post bewerben?
+      - Muss ich mich über die Website bewerben?
+  - intent: faq/wann-bewerben
+    examples: |
+      - Bis wann muss man sich bewerben?
+      - Bis wann kann ich mich bewerben?
+      - Wann bewerben?
+      - Ab wann muss ich mich bewerben?
+      - Ab wann kann ich mich bewerben?
+      - Wann bewerben für Ausbildung?
+      - Ab wann ist eine Bewerbung möglich?
+      - Bis wann muss man sich beworben haben?
+      - Wann kann ich mich für eine Ausbildung bewerben?
+      - Wann für Ausbildungsbeginn nächstes Jahr bewerben?
+      - Ab mann ist eine Bewerbung möglich?
+      - Ab wann für nächstes Jahr bewerben?
+      - Ab wann kann man sich für eine Ausbildung bewerben?
+      - Wann ist Bewerbungsschluss?
+      - Wann ist Deadline?
+      - Bis wann muss ich mich beworben haben?
+      - Bis wann muss die Bewerbung eingegangen sein?
+      - Wann muss die Bewerbung spätestens eingegangen sein?
+      - Wann ist die Bewerbungsdeadline?
+      - Bis wann ist Deadline?
+      - Ab wann kann ich mich bewerben?
+      - Wann ist Bewerbung für Ausbildungsplatz möglich?
+      - Wann und wo kann ich mich bewerben?
+      - Bis wann muss ich mich spätestens bewerben?
+      - Wann Bewerbung spätestens abschicken?
+      - Bis wann muss die Bewerbung angekommen sein?
+      - Bis wann kann ich mich noch bewerben?
+      - Wann ist der letzte Tag wo ich meine Bewerbung einreichen kann?
+  - intent: faq/benefits
+    examples: |
+      - Was bekommt man bei Adelholzener geboten?
+      - Was sind die Vorteile, wenn man bei Adelholzener arbeitet?
+      - Bekommt man Wasser kostenlos?
+      - Wie viel Wasser kostenlos?
+      - Was bekommt man bei Adelholzener?
+      - Was sind die Vorteile?
+      - Benefits bei Adelholzener
+      - Benefits
+      - Vorteile
+      - Mitarbeitervorteile
+      - Was sind Mitarbeitervorteile
+      - Welche Mitarbeitervorteile gibt es?
+      - Welche Mitarbeiterrabatte gibt es?
+      - Gibt es Mitarbeiterrabatte?
+      - Mitarbeiterrabatte?
+  - intent: faq/location
+    examples: |
+      - Wo ist Adelholzener?
+      - Wo ist das Werk?
+      - Wo gibt es Adelholzener?
+      - Wo ist der Arbeitsplatz?
+      - Wo arbeitet man?
+      - Wo muss ich hin in der Ausbildung?
+      - Muss ich in Siegsdorf arbeiten?
+      - Ist die Arbeit dann in Siegsdorf?
+      - Ist Adelholzener in Traunstein?
+      - Ist Adelholzener in Siegsdorf?
+      - Muss ich in Siegsdorf arbeiten?
+      - Ist die Ausbildung in Siegsdorf?
+      - Wo findet die Ausbildung statt?
+      - Wo ist die Ausbildung?
+      - In welcher Stadt arbeitet man?
+      - In welcher Stadt ist die Ausbildung?
+      - Wo ist man während der Ausbildung?
+      - Wo muss man während der Ausbildung arbeiten?
+      - Wo ist die Praxisphase?
+      - An welchem Ort findet die Ausbildung statt?
+      - An welchem Ort ist man während der Ausbildung?
+  - intent: faq/urlaub
+    examples: |
+      - Wie viel Urlaub hat man?
+      - Wie viele Urlaubstage gibt es?
+      - Wie viele Urlaubstage als Azubi?
+      - Wie viele Urlaubstage hat man als Azubi?
+      - Wie viele Urlaubstage gibt es während der Ausbildung?
+      - Hat man Urlaubstage in der Ausbildung?
+      - Gibt es Urlaub als Azubi?
+      - Hat man frei in der Ausbilung?
+      - Gibt es freie Tage in der Ausbildung?
+      - Habe ich Urlaub in der Ausbildung?
+      - Wie viele Urlaubstage hat man während der Ausbildung?
+      - Wie viele Tage habe ich frei?
+      - Bekomme ich Urlaub als Azubi?
+      - Bekomme ich Urlaubstage?
+      - Bekomme ich Urlaub?
+      - Wie viel Urlaub in Ausbildung?
+      - Wie viel Urlaubstage während Ausbildung?
+      - Wie viele Urlaubstage während der Ausbildung?
+      - Wie viele Urlaubstage gibt es?
+      - Wie viel Urlaub als Azubi?
+      - Wie viel Urlaub in der Ausbildung?
+      - Wie viele Urlaubstage hat man in der Ausbildung?
+      - Wie viel Urlaub hat man im ersten Lehrjahr?
+  - intent: faq/altersvorsorge
+    examples: |
+      - Gibt es betriebsliche Altersvorsorge?
+      - Bekommt man Zuschuss zur Altersvorsorge?
+      - Gibt es eine Betriebsrente?
+      - Bekomme ich als Azubi auch betriebliche Altersvorsorge?
+      - Bekommt man eine Altersvorsorge?
+      - Hat Adelholzener eine betriebliche Altersvorsorge?
+      - Gibt es auch eine betriebliche Altersvorsorge?
+      - Bekommt man als Azubi betriebliche Altersvorsorge?
+      - Als Azubi auch betriebliche Altersvorsorge?
+      - Welche Altersvorsorge?
+      - Gibt es auch betriebliche Altervorsorge?
+      - Gibt es eine Altersvorsorge schon für Azubis?
+      - Bekommt man als Azubi eine Altersvorsorge?
+      - Gibts betriebliche Altersvorsorge?
+      - Bekommt man Zuschuss zur betriebslichen Altervorsorge?
+  - intent: faq/ausbildungsbeginn
+    examples: |
+      - Wann beginnt die Ausbildung?
+      - Wann ist Ausbildungsstart?
+      - Wann startet die Ausbildung?
+      - Wann geht die Ausbildung los?
+      - Wann startet man dann?
+      - Wann geht es los?
+      - Wann beginnt man mit der Ausbildung?
+      - Zu welchem Datum beginnt die Ausbildung?
+      - An welchem Tag geht die Ausbildung los?
+      - Wann hat man dann den ersten Arbeitstag?
+      - Wann ist der erste Arbeitstag?
+      - Wann startet man mit der Arbeit?
+      - Geht die Ausbildung im September an?
+  - intent: faq/kontakt
+    examples: |
+      - Wen kann ich anrufen bei Fragen?
+      - Wer ist die Kontaktperson?
+      - Wie ist die Telefonnummer der Personalabteilung?
+      - Wen kann ich bei einer frage anrufen?
+      - Kann ich eine Email an die Personalabteilung schreiben?
+      - Wie ist die Email-Adresse der Personalabteilung?
+      - Wie ist die Telefonnummer?
+      - Wer ist die Ansprechperson für eine Ausbildung?
+      - Wer ist für Azubis die Ansprechperson?
+  - intent: faq/anschreiben
+    examples: |
+      - Wie soll das Anschreiben aussehen?
+      - Brauche ich ein Bewerbungsanschreiben?
+      - Muss ich auch ein Anschreiben machen?
+      - Braucht man ein Anschreiben?
+      - Wie muss das Bewerbungsanschreiben aussehen?
+      - Welche Sachen müssen in das Bewerbungsanschreiben?
+      - Wie sollte man das Bewerbungsanschreiben aufbauen?
+      - Wie lange muss das Bewerbungsanschreiben sein?
+      - Was soll man in das Anschreiben schreiben?
+  - intent: faq/lebenslauf
+    examples: |
+      - Wie soll der Lebenslauf aussehen?
+      - Brauche ich einen Lebenslauf?
+      - Muss ich auch einen Lebenslauf machen?
+      - Braucht man einen Lebenslauf?
+      - Wie muss den Lebenslauf aussehen?
+      - Welche Sachen müssen in das Lebenslauf?
+      - Wie sollte man den Lebenslauf aufbauen?
+      - Wie lange muss den Lebenslauf sein?
+      - Was muss alles in den Lebenslauf?
+      - Was soll im Lebenslauf stehen?
+  - intent: faq/zeugnisse
+    examples: |
+      - Welche Zeugnisse muss ich mitschicken?
+      - Wie viele Zeugnisse muss ich schicken?
+      - Brauche ich auch das Zwischenzeugnis?
+  - intent: faq/arbeitszeit
+    examples: |
+      - Wie viele Stunden pro Woche muss man arbeiten?
+      - Wie viele Wochenstunden hat man?
+      - Wie viele Stunden muss man pro Woche arbeiten?
+      - Wie sind die Arbeitszeiten?
+      - Welche Arbeitszeiten hat man?
+      - Wie sind die Arbeitszeiten in der Ausbildung?
+      - Wie viele Stunden muss man während der Ausbildung arbeiten?
+      - Von wann bis wann geht die Arbeitszeit?
+      - Von wann bis wann muss man arbeiten?
+      - Wie viele Stunden hat man in der Woche?
+  - intent: faq/kantine
+    examples: |
+      - Gibt es eine Kantine?
+      - Hat Adelholzener eine Kantine?
+      - Kann man Mittagessen kaufen?
+      - Gibt es in Siegsdorf eine Kantine?
+      - Hat man die Möglichkeit Essen zu kaufen?
+      - Gibt es Brotzeit zu kaufen?
+      - Kann man Essen bei Adelholzener kaufen?
+      - Gibt es eine Betriebsgastronomie?
+      - Muss man sein Mittagessen mitnehmen?
+  - intent: faq/praktikum
+    examples: |
+      - Kann ich ein Praktikum bei Adelholzener machen?
+      - Kann man ein Praktikum machen?
+      - Kann man vor der Ausbildung ein Praktikum machen?
+      - Gibt es auch Praktika?
+      - Kann ich bei Adelholzener ein Praktikum machen?
+      - Wie kann ich mich für ein Praktikum bewerben?
+      - Kann man für eine Woche ein Praktikum machen?
+      - Wo kann ich mich für ein Praktikum bewerben?
+      - Wie kann man ein Schnupperpraktikum machen?
+      - Kann man vor der Bewerbung noch ein Praktikum absolvieren?
+      - Hat man als Schüler die Möglichkeit auf ein Praktikum?
+      - Gibts auch ein Schnupperpraktikum?
+  - intent: faq/gehalt
+    examples: |
+      - Wie viel verdient man in der Ausbildung?
+      - Wie viel Gehalt bekommt man als Azubi?
+      - Wie viel verdient ein Azubi bei Adelholzener?
+      - Wie viel Geld bekommt man in der Ausbildung?
+      - Wie viel Geld in der Ausbildung?
+      - Wie viel bekommt man brutto?
+      - Wie viel bekommt man netto?
+      - Wie ist das Gehalt in der Ausbildung?
+      - Bekommt man auch Geld in der Ausbildung?
+      - Wie viel verdient man?
+      - Was bekommt ein Azubi?
+      - Was bekommt man an Geld?
+      - Wie viel Geld bekomme ich?
+      - Wie viel Geld als Azubi?
+      - Wie ist denn das Gehalt?
+      - Wie viel bekommt man in der Ausbildung?
+      - Wie viel bekommt man als Azubi?
+      - Bekommt man als Azubi Gehalt?
+      - Wie ist der Lohn?
+      - Was ist der Lohn in der Ausbildung?
+      - Wie viel Lohn bekommt man als Azubi?
+      - Wie viel Lohn bekommt man denn?
+  - intent: faq/uebernahme
+    examples: |
+      - Wird man nach der Ausbildung übernommen?
+      - Wie sind die Übernahmechancen?
+      - Gibt es eine Übernahmegarantie?
+      - Wird man danach auch übernommen?
+      - Bekommt man nach der Ausbildung eine Festanstellung?
+      - Wird man sicher übernommen?
+      - Wir man nach der Ausbildung auch übernommen?
+      - Wie sind nach der Ausbildung die Übernahmechancen?
+      - Werden alle nach der Ausbildung übernommen?
+      - Werden Azubis übernommen?
+      - Werden die Azubis dann übernommen?
